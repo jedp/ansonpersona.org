@@ -1,7 +1,7 @@
 $(document).ready(function() {
   navigator.id.beginAuthentication(function(email) {
     $(".email").text(email);
-    var user = email.replace('@eyedee.me', '').toLowerCase();
+    var user = email.replace('@ansonpersona.org', '').toLowerCase();
 
     // check if that email exists here
     $.ajax({
@@ -33,13 +33,13 @@ $(document).ready(function() {
     // ("#no_such_user form").submit
     //
     // Note to reader: this may be too magic?  we could remove this functionality and
-    // just make the user go to eyedee.me and create their account.  This behaviore
+    // just make the user go to ansonpersona.org and create their account.  This behavior
     // is probably what will happen in the Real World
     $("form").submit(function(e) {
       e.preventDefault();
 
       // figure out which password field they entered their password into
-      var pass = $.trim($("#main input").val()) || $.trim($("#no_such_user input").val())
+      var pass = $.trim($("#main input").val()) || $.trim($("#no_such_user input").val());
 
       // validate password client side
       if (pass.length < 6) {

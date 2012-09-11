@@ -8,10 +8,10 @@
   // a well formed provisioning page and gives us the parameters of the provisioning
   navigator.id.beginProvisioning(function(email, cert_duration) {
     // now we have the email address that wishes to be provisioned!
-    // is he authenticated to eyedee.me?
+    // is he authenticated to ansonpersona.org?
     $.get('/api/whoami')
       .success(function(r) {
-        email = email.replace('@eyedee.me', '').toLowerCase();
+        email = email.replace('@ansonpersona.org, '').toLowerCase();
         if (email != r.user) {
           return navigator.id.raiseProvisioningFailure('user is not authenticated as target user');
         }

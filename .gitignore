@@ -1,3 +1,6 @@
+public.key
+secret.key
+awsbox_notes.txt
 /static/.well-known/browserid
 /node_modules
 *~

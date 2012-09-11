@@ -7,5 +7,9 @@
   },
   "packages": [
     "mysql-server"
-  ]
+  ],
+  "env": {
+    "PUBLIC_KEY_FILE": "$HOME/public.key",
+    "SECRET_KEY_FILE": "$HOME/secret.key"
+  } 
 }
