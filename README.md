@@ -1,5 +1,12 @@
+AnsonPersona.org
+================
+
+This is a fork of [eyedee.me](https://github.com/mozilla/eyedee.me)
+for Anson Schools for the purpose of demonstrating [Mozilla
+Persona](https://persona.org).
+
 EyeDee.Me
-=========
+---------
 
 EyeDee.Me is an example Indentity Provider for the BrowserID protocol. This
 protocol is used by Mozilla Persona to authenticate users across the web.
@@ -14,7 +21,7 @@ Setup
 EyeDee.Me requires Node.js, npm, a MySQL database, and a webserver acting as a
 reverse proxy / SSL terminator. Once those are in place:
 
-1.  Clone this repository.
+1.  Clone the [eyedee.me repository](https://github.com/mozilla/eyedee.me)
 
 2.  Execute `npm install` in the root of your clone to get all of the necessary
     Node libraries.
