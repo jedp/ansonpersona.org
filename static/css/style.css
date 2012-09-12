@@ -83,3 +83,11 @@ a:visited {
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
 }
+
+form div {
+  display: table-row;
+}
+form span {
+  display: table-cell;
+  padding: 2px 4px 2px 0;
+}
